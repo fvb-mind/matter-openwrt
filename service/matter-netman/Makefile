@@ -16,8 +16,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=matter-netman
 PKG_RELEASE:=2
-#PKG_SOURCE_URL:=ssh://git@code.cablelabs.com:7999/csa-matter/mirrors/connectedhomeip-staging.git
-PKG_SOURCE_URL:=file:///data/work/Mind/CableLabs/connectedhomeip
+PKG_SOURCE_URL:=ssh://git@code.cablelabs.com:7999/csa-matter/mirrors/connectedhomeip-staging.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_SUBMODULES:=\
   third_party/pigweed/repo \
@@ -27,11 +26,11 @@ PKG_SOURCE_SUBMODULES:=\
 
 # Hash can be regenerated with make package/matter-netman/check FIXUP=1
 PKG_SOURCE_DATE:=2026-07-13
-PKG_SOURCE_VERSION:=07df5744961a3aee0908cab9b32a582fdb2e12d5 #b39eff6ed09e92344c3c6cc9a5a1b495a469bbfd
-PKG_MIRROR_HASH:=49ca8aca726d4b5a8e826e8c2ffad94ab26aef350a867415cf072dcd9292d13e #cc87d6df5cc945309bea4c810ba90081fa59dfaaa1daedf9fa199d17e3f313f8
+PKG_SOURCE_VERSION:=940263c02d3e9778a194d6c3d810796b5d378ac7
+PKG_MIRROR_HASH:=784d18a457e690a20cb9cd41332e3d60b05892d8baccd2623d118ca67910bb17
 
 # Use local source dir for development
-USE_SOURCE_DIR:=/data/work/Mind/CableLabs/connectedhomeip
+# USE_SOURCE_DIR:=$(HOME)/workspace/connectedhomeip
 
 PKG_LICENSE:=Apache-2.0
 PKG_LICENSE_FILES:=LICENSE
